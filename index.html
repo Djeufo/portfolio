@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Djeufo Boris</title>
+    <link rel="icon" href="./img/logo.png" type="image/png" />
+    <style>
+      :root {
+        --primary-color: #2c3e50;
+        --secondary-color: #18bc9c;
+        --bg-color: #f4f4f4;
+        --font-color: #333;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Segoe UI", sans-serif;
+        background: var(--bg-color);
+        color: var(--font-color);
+        scroll-behavior: smooth;
+      }
+
+      header {
+        background: var(--primary-color);
+        color: white;
+        padding: 2rem;
+        text-align: center;
+      }
+
+nav {
+  position: sticky;
+  top: 0;
+  background: #34495e;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+      nav a {
+        color: white;
+        padding: 1rem 1.5rem;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      nav a:hover {
+        background: var(--secondary-color);
+        color: #fff;
+      }
+
+      section {
+        max-width: 900px;
+        margin: 2rem auto;
+        padding: 1rem;
+      }
+
+.contact-form {
+  max-width: 80%SS;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--secondary-color, #3498db);
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+.contact-form button {
+  padding: 0.9rem;
+  background-color: var(--secondary-color, #3498db);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #2c80b4;
+}
+
+
+      h2 {
+        border-bottom: 2px solid var(--secondary-color);
+        padding-bottom: 0.5rem;
+      }
+
+      ul {
+        list-style-type: circle;
+        padding-left: 1.5rem;
+      }
+
+      form input,
+      form textarea,
+      form button {
+        width: 100%;
+        margin: 0.5rem 0;
+        padding: 0.75rem;
+        font-size: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      form button {
+        background: var(--secondary-color);
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
+
+      form button:hover {
+        background: #139e86;
+      }
+
+      footer {
+        text-align: center;
+        background: var(--primary-color);
+        color: white;
+        padding: 1rem;
+      }
+
+      @media (max-width: 600px) {
+        nav a {
+          flex: 1 1 100%;
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Djeufo Moo Zeuna Boris</h1>
+      <p>Software Developer | Cloud Leaner (AWS, CI/CD)</p>
+    </header>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Hello! I'm a full-stack developer specializing in building modern web
+        applications using technologies like JavaScript, React, Node.js, and
+        more. I love creating clean, user-friendly interfaces and solving
+        complex technical problems.
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <div class="project post">
+        <img
+          src="https://via.placeholder.com/800x400?text=Project+1"
+          alt="Project 1 screenshot"
+        />
+        <div class="project-content">
+          <h3>🌐 Portfolio Website</h3>
+          <p>
+            A modern responsive personal website built using HTML, CSS, and
+            JavaScript. It highlights skills, projects, and contact information.
+          </p>
+          <a href="#" target="_blank">🔗 Live Demo</a> |
+          <a href="#" target="_blank">💻 GitHub</a>
+        </div>
+      </div>
+
+      <div class="project post">
+        <img
+          src="https://via.placeholder.com/800x400?text=Project+2"
+          alt="Project 2 screenshot"
+        />
+        <div class="project-content">
+          <h3>📊 Dashboard App</h3>
+          <p>
+            An interactive dashboard that visualizes real-time data using
+            Chart.js and RESTful APIs. Mobile-friendly and performant.
+          </p>
+          <a href="#" target="_blank">🔗 Live Demo</a> |
+          <a href="#" target="_blank">💻 GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>JavaScript / TypeScript</li>
+        <li>React / Next.js</li>
+        <li>Node.js / Express</li>
+        <li>HTML5, CSS3, SCSS</li>
+        <li>Git, GitHub, Docker</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+  <form class="contact-form">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+      <p>
+        Or email me directly at
+        <a href="mailto:your.email@example.com">your.email@example.com</a>
+      </p>
+    </section>
+
+    <footer>
+      &copy; <span id="year"></span> Djeufo Boris. All rights reserved.</p>
+    </footer>
+
+    <script>
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          alert("Thank you for your message! I will get back to you soon.");
+          this.reset();
+        });
+
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
